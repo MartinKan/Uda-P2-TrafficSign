@@ -50,9 +50,9 @@ I used the standard python methods to calculate summary statistics of the traffi
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a set of 3 histograms showing the distribution of traffic sign classes across the training, validation and test data sets.
 
-![alt text][image1]
+![Traffic Sign Histograms][image1]
 
 ### Design and Test a Model Architecture
 
