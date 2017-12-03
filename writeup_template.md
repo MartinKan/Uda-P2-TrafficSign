@@ -20,11 +20,11 @@ The goals / steps of this project are the following:
 [image1]: Histograms.png "Visualization"
 [image2]: Original-Image.gif "Image prior to pre-processing"
 [image3]: After-Equalization.gif "Image after pre-processing"
-[image4]: Internet Sample/1.jpg "Traffic Sign 1"
-[image5]: Internet Sample/2.jpg "Traffic Sign 2"
-[image6]: Internet Sample/3.jpg "Traffic Sign 3"
-[image7]: Internet Sample/4.jpg "Traffic Sign 4"
-[image8]: Internet Sample/5.jpg "Traffic Sign 5"
+[image4]: Internet%20Sample/1.jpg "Traffic Sign 1"
+[image5]: Internet%20Sample/2.jpg "Traffic Sign 2"
+[image6]: Internet%20Sample/3.jpg "Traffic Sign 3"
+[image7]: Internet%20Sample/4.jpg "Traffic Sign 4"
+[image8]: Internet%20Sample/5.jpg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -64,7 +64,12 @@ I experimented with other pre-processing methods (equalizing on the grayscale im
 
 Here is an example of a traffic sign image before and after histogram equalization.
 
+Before equalization:
+
 ![Before equalization][image2]
+
+After equalization:
+
 ![After equalization][image3]
 
 As a last step, I normalized the entire data set by subtracting each image by the mean value of the data set and then dividing the result by the data set's standard deviation.  This has the effect of centering the values of the images around 0 which makes it easier to reduce the loss rate later on. 
@@ -87,21 +92,15 @@ My final model consisted of the following layers:
 | Max pooling	      	| 2x2 stride,  outputs 4x4x96   				|
 | Flatten			    | outputs 1,536 								|
 | Fully connected (L4)	| Random weights, zero bias, outputs 768  		|
-| Batch Norm, RELU & 	| 												|
-| Dropout  				|												|
+| Batch Norm, RELU & Dropout	| 												|
 | Fully connected (L5)	| Random weights, zero bias, outputs 384     	|
-| Batch Norm, RELU & 	| 												|
-| Dropout  				|												|
+| Batch Norm, RELU & Dropout	| 												|
 | Fully connected (L6)	| Random weights, zero bias, outputs 192   		|
-| Batch Norm, RELU & 	| 												|
-| Dropout  				|												|
+| Batch Norm, RELU & Dropout	| 												|
 | Fully connected (L7)	| Random weights, zero bias, outputs 96  		|
-| Batch Norm, RELU & 	| 												|
-| Dropout  				|												|
+| Batch Norm, RELU & Dropout	| 												|
 | Fully connected (L8)	| Random weights, zero bias, outputs 43    		|
 | Logits & Softmax		|												|
-|						|												|
- 
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -117,7 +116,6 @@ My final model results were:
 
 These results were calculated in the section of the code entitled "Train, Validate and Test the Model"
 
-If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 
 I started off using the LeNet-5 architecture initially because it was canvassed in detail in the tutorial and was recommended by the course video as a good starting point.
@@ -138,11 +136,6 @@ I made each convolutional layer deeper by using extra filters (roughly double of
 
 I found that a deeper network with more layers had the single biggest impact on the accuracy rate than anything else.  This is probably because having additional layers in a network allowed for more features to be identified accurately than a network with less layers.  The other design choices that I made (convolutional layer, max pooling, batch normalization and dropout) obviously played their part as well in creating an accurate model.  For example, a convolutional layer is essential for feature matching (e.g. lines and shapes) which makes it a good choice for this question as it involves the classification of images.  And adding a dropout layer helps to improve the accuracy rate of the model by forcing the nodes to learn the multiple characteristics of the neural network. 
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
@@ -152,7 +145,6 @@ Here are five German traffic signs that I found on the web:
 ![Traffic Sign 1][image4] ![Traffic Sign 2][image5] ![Traffic Sign 3][image6] 
 ![Traffic Sign 4][image7] ![Traffic Sign 5][image8]
 
-[MODIFY]
 
 The first image might be difficult to classify because the red ring bordering the sign looks faded.
 
