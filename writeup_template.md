@@ -20,11 +20,11 @@ The goals / steps of this project are the following:
 [image1]: Histograms.png "Visualization"
 [image2]: Original-Image.gif "Image prior to pre-processing"
 [image3]: After-Equalization.gif "Image after pre-processing"
-[image4]: Internet%20Sample/1.jpg "Traffic Sign 1"
-[image5]: Internet%20Sample/2.jpg "Traffic Sign 2"
-[image6]: Internet%20Sample/3.jpg "Traffic Sign 3"
-[image7]: Internet%20Sample/4.jpg "Traffic Sign 4"
-[image8]: Internet%20Sample/5.jpg "Traffic Sign 5"
+[image4]: Internet%20Samples/1.jpg "Traffic Sign 1"
+[image5]: Internet%20Samples/2.jpg "Traffic Sign 2"
+[image6]: Internet%20Samples/3.jpg "Traffic Sign 3"
+[image7]: Internet%20Samples/4.jpg "Traffic Sign 4"
+[image8]: Internet%20Samples/5.jpg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
