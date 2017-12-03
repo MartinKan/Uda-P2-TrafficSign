@@ -6,7 +6,7 @@ Overview
 This repository contains the following files that I will be submitting for the traffic sign classification project:
 
 1.  [Traffic_Sign_Classifier.ipynb](https://github.com/MartinKan/Uda-P2-TrafficSign/blob/master/Traffic_Sign_Classifier.ipynb)
-2.  [Traffic_Sign_Classifier.html](https://github.com/MartinKan/Uda-P2-TrafficSign/blob/master/Traffic_Sign_Classifier.html)
+2.  [Report.html](https://github.com/MartinKan/Uda-P2-TrafficSign/blob/master/Report.html)
 2.  [project_writeup.md](https://github.com/MartinKan/Uda-P2-TrafficSign/blob/master/project_writeup.md)
 3.  Various image fils that are referenced in project_writeup.md
 
