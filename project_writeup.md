@@ -1,6 +1,6 @@
 # **Traffic Sign Classifier Project** 
 
-## Writeup
+## Project Writeup
 
 ---
 
